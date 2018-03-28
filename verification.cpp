@@ -143,16 +143,16 @@ static bool dlg_verification(const std::string& serial)
     }
 
     int days_left = json_data["info"]["days"];
+    if(days_left < 0) {
+        QMessageBox::information (NULL, "认证", "帐号已经过期");
+        return dlg_verification(serial);
+    }
     auto now = QDateTime::currentDateTime();
     auto expire_date = now.addDays(days_left + 1);
 
 
     const auto nowStr = now.toString("yyyy-MM-dd hh:mm:ss");
     const auto expire_dateStr = expire_date.toString("yyyy-MM-dd hh:mm:ss");
-    qDebug() << days_left;
-    qDebug() << nowStr;
-    qDebug() << expire_dateStr;
-
 
     json json_save;
     json_save["account"] = account.toStdString();
@@ -177,11 +177,6 @@ try
     const string last_datetime = data["last_datetime"];
     const string expire_date = data["expire_date"];
     const string account = data["account"];
-
-    std::cout << history_serial << std::endl;
-    std::cout << last_datetime << std::endl;
-    std::cout << expire_date << std::endl;
-    std::cout << account << std::endl;
 
     const auto last = QDateTime::fromString(last_datetime.data(), "yyyy-MM-dd hh:mm:ss");
     const auto expire = QDateTime::fromString(expire_date.data(), "yyyy-MM-dd hh:mm:ss");

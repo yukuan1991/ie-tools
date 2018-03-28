@@ -19,38 +19,38 @@ Tools::~Tools()
 void Tools::on_flowProcessBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Flow Process Charting/flow-process.exe\"");
-    process.startDetached("flow-process.exe");
+    process.startDetached("\"./Flow Process Charting/flow-process.exe\"");
+//    process.startDetached("flow-process.exe");
 }
 
 void Tools::on_processFlowBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Process Flowchart/process-flow.exe\"");
-    process.startDetached("process-flow.exe");
+    process.startDetached("\"./Process Flowchart/process-flow.exe\"");
+//    process.startDetached("process-flow.exe");
 }
 
 void Tools::on_humanMachineBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Human-Machine Operation Study/human-machine.exe\"");
-    process.startDetached("human-machine.exe");
+    process.startDetached("\"./Human-Machine Operation Study/human-machine.exe\"");
+//    process.startDetached("human-machine.exe");
 
 }
 
 void Tools::on_lineBalancingBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Line Balancing/LineBalancingR.exe\"");
-    process.startDetached("LineBalancingR.exe");
+    process.startDetached("\"./Line Balancing/LineBalancingR.exe\"");
+//    process.startDetached("LineBalancingR.exe");
 
 }
 
 void Tools::on_SLPBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Systematic Layout Planning/SLP.exe\"");
-    process.startDetached("SLP.exe");
+    process.startDetached("\"./Systematic Layout Planning/SLP.exe\"");
+//    process.startDetached("SLP.exe");
 
 }
 
@@ -70,24 +70,24 @@ void Tools::on_FMEABtn_clicked()
 void Tools::on_MODBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Work Study - MOD/mod.exe\"");
-    process.startDetached("mod.exe");
+    process.startDetached("\"./Work Study - MOD/mod.exe\"");
+//    process.startDetached("mod.exe");
 
 }
 
 void Tools::on_MOSTBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Work Study - MOST/most.exe\"");
-    process.startDetached("most.exe");
+    process.startDetached("\"./Work Study - MOST/most.exe\"");
+//    process.startDetached("most.exe");
 
 }
 
 void Tools::on_MTMBtn_clicked()
 {
     QProcess process;
-//    process.startDetached("\"./Work Study - MTM/mtm.exe\"");
-    process.startDetached("mtm.exe");
+    process.startDetached("\"./Work Study - MTM/mtm.exe\"");
+//    process.startDetached("mtm.exe");
 
 }
 
